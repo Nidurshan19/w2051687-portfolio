@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body id="contact">
+    <header class="header">
+        <div class="logo">
+            <img src="images/download-removebg-preview.png" alt="NN logo">
+            <span>Nidurshan.</span>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <i class="fas fa-times" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" data-active="home">Home</a>
+            <a href="about.html" data-active="about">About</a>
+            <a href="blog.html" data-active="blog">Blog</a>
+            <a href="contact.html" data-active="contact">Contact</a>
+        </nav>
+    </header>
+
+
+
+
+<main>
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h3>LET'S WORK TOGETHER</h3>
+            <h2>Contact Me</h2>
+            <p>GET IN TOUCH VIA EMAIL</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <img src="images/Nidurshan.png" alt="Profile Picture" class="profile-image">
+                <h2>Nidurshan</h2>
+                <p class="job-title">Undergraduate at IIT</p>
+                <p class="availability">To contact me.Fill out the Contact Form</p>
+                
+                <div class="contact-details">
+                    <p>Phone: <a href="tel:+94778869085">+94 778 869 085</a></p>
+                    <p>Email: <a href="mailto:nidudea16@gmail.com">nidudea16@gmail.com</a></p>
+                </div>
+                
+                <div class="social-media">
+                    <p>Social Media</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">YOUR NAME</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">YOUR MESSAGE</label>
+                    <textarea id="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="send-message">
+                    SEND MESSAGE
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <ul class="social-icon">
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p>
+        <small>&copy; Copyright 2024, Neethiarasu Nidurshan</small>
+    </p>
+</footer>
+
+<script src="nav.js"></script>
+
+
+</body>
+</html>
