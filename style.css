@@ -59,7 +59,9 @@ section {
     align-items: center;
 }
 
-.logo img {
+
+/* Attribute Selector */
+img[alt="logo"] {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -384,7 +386,8 @@ span{
     margin-bottom: 5px;
 }
 
-.form-group input,
+/* Attribute Selector */
+input[required],
 .form-group textarea {
     width: 100%;
     padding: 12px;
@@ -421,6 +424,9 @@ span{
 .send-message:hover {
     gap: 15px;
 }
+
+
+
 
 /* footer */
 
