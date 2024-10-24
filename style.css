@@ -95,6 +95,10 @@ img[alt="logo"] {
     transition: color 0.3s ease;
 }
 
+.navbar a .active {
+    color: green;
+}
+
 
 
 .navbar a:hover,.navbar a.active {
