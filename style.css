@@ -402,8 +402,8 @@ span{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: -10px -10px 15px rgba(27, 25, 25, 0.5),
-    10px 10px 15px rgba(70,70,70,0.12);
+    box-shadow: 10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 8px;
     padding: 20px;
 }
 
@@ -471,8 +471,9 @@ span{
     min-width:75% ;
     display: flex;
     flex-direction: column;
-    box-shadow: -10px -10px 15px rgba(27, 25, 25, 0.5),
-            10px 10px 15px rgba(70,70,70,0.12);
+    box-shadow: 10px 10px 15px rgba(70,70,70,0.12);
+    overflow: hidden;
+    border-radius: 8px;
     padding: 20px;
 }
 
@@ -498,7 +499,7 @@ input[required],
     color: #ffffff;
     font-size: 16px;
     box-shadow: inset -10px -10px 15px rgba(19, 16, 16, 0.12), 
-           inset 10px 10px 15px rgba(19, 16, 16, 0.12);
+           i
 }
 
 .form-group textarea {
@@ -584,7 +585,7 @@ footer .menu li a:hover{
 }
 
 footer p{
-    color: black;
+    color: black inset 10px 10px 15px rgba(19, 16, 16, 0.12);
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
