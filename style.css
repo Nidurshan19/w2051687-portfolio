@@ -50,18 +50,9 @@ main{
 
 hr{
     border: 1px solid black; 
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
-
-
-
-
-
-
-
-
-
 /* HEADER / NAVIGATION LINKS */
 
 .header {
@@ -119,15 +110,6 @@ hr{
 #close-icon,#menu-icon{
     color: black;
 }
-
-
-
-
-
-
-
-
-
 
 /* HOME SECTION */
 
@@ -279,14 +261,154 @@ span{
     }
 }
 
+/* About page */
+
+/* ABOUT PAGE */
+/* About section base styles */
+#about {
+    padding: 100px 5%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.section-header h4 {
+    color: #a0a0a0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-img {
+    flex: 0 0 350px; /* Fixed width for image container */
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.section-header h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: black;
+    text-align: justify;
+}
+
+/* Skills section */
+.skills-section {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.skills-section .text {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 180px;
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+/* Contact details */
+.contact-details {
+    margin: 30px 0;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.detail-item .icon {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.detail-item .label {
+    font-weight: 500;
+    margin-right: 10px;
+    min-width: 80px;
+}
+
+.detail-item .value {
+    color: black;
+}
 
 
+.detail-item .fa-map-marker {
+    color: #FF4136;  /* Bright red color */
+    font-size: 24px;
+}
 
+/* Email icon styling */
+.detail-item .fa-envelope {
+    color: #b8bdb9;  /* Green color */
+    font-size: 20px;
+}
+
+/* Phone icon styling */
+.detail-item .fa-phone {
+    color: #0074D9;  /* Blue color */
+    font-size: 22px;
+}
 
 /* blogs */
-
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -678,6 +800,21 @@ footer p{
     .profile-image , .about-image{
         max-width: 300px;
     }
+    .about-container {
+        gap: 30px;
+    }
+    
+    .about-img {
+        flex: 0 0 250px;
+    }
+    
+    .about-text {
+        font-size: 18px;
+    }
+    
+    .skills-section .cells .cell {
+        width: 160px;
+    }
 
     
 }
@@ -746,6 +883,32 @@ footer p{
         text-align: center;
     }
 
+    #about {
+        padding: 90px 4%;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .about-img {
+        flex: 0 0 auto;
+        width: 200px;
+    }
+    
+    .about-content {
+        width: 100%;
+    }
+    
+    .skills-section .text {
+        font-size: 18px;
+    }
+    
+    .detail-item {
+        font-size: 16px;
+    }
 
 
     .expertise-grid {
@@ -812,6 +975,47 @@ footer p{
 
     .profile-image , .about-image{
         width: 300px;
+    }
+    #about {
+        padding: 40px 3%;
+    }
+    
+    .about-img {
+        width: 180px;
+    }
+    
+    .section-header h2 {
+        font-size: 24px;
+    }
+    
+    .about-text {
+        font-size: 16px;
+    }
+    
+    .skills-section h2 {
+        font-size: 24px;
+    }
+    
+    .skills-section .cells .cell {
+        width: 140px;
+        padding: 8px 15px;
+    }
+    
+    .skills-section .cells .cell img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+    
+    .detail-item {
+        font-size: 14px;
+    }
+    
+    .detail-item .icon {
+        font-size: 18px;
     }
 
 }
