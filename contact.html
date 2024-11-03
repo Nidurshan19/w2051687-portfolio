@@ -55,7 +55,7 @@
 <main>
     <section id="contact" class="contact-section">
         <div class="section-header">
-            <h3>LET'S WORK TOGETHER</h3>
+            <h4>LET'S WORK TOGETHER</h4>
             <h2>Contact Me</h2>
             <p>GET IN TOUCH VIA EMAIL</p>
         </div>
@@ -65,7 +65,7 @@
                 <img src="images/image-bg.jpg" alt="Profile Picture" class="profile-image">
                 <h2>Nidurshan</h2>
                 <p class="job-title">Undergraduate at IIT</p>
-                <p class="availability">To contact me.Fill out the Contact Form</p>
+                <p class="availability">Reach out anytime by filling out the contact form here.</p>
                 
                 <div class="contact-details">
                     <p>Phone: <a href="tel:+94778869085">+94 778 869 085</a></p>
@@ -87,19 +87,38 @@
             <form class="contact-form">
                 <div class="form-group">
                     <label for="name">YOUR NAME</label>
-                    <input type="text" id="name" required>
+                    <input type="text" 
+                           id="name" 
+                           placeholder="e.g-John Smith" 
+                           required>
                 </div>
+                
                 <div class="form-group">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required>
+                    <input type="tel" 
+                           id="phone" 
+                           name="phone" 
+                           placeholder="e.g-0771234567"
+                           pattern="[0-9]{10}" 
+                           maxlength="10"
+                           title="Please enter a valid 10-digit phone number" 
+                           required>
                 </div>
+                
                 <div class="form-group">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" required>
+                    <input type="email" 
+                           id="email" 
+                           placeholder="e.g-ms.dhoni@example.com"
+                           required>
                 </div>
+                
                 <div class="form-group">
                     <label for="message">YOUR MESSAGE</label>
-                    <textarea id="message" rows="6" required></textarea>
+                    <textarea id="message" 
+                              rows="6" 
+                              placeholder="Type your message here..."
+                              required></textarea>
                 </div>
                 <button type="submit" class="send-message">
                     SEND MESSAGE
@@ -128,10 +147,10 @@
     </ul>
 
     <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blogs</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 
     <p>
