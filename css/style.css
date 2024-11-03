@@ -593,7 +593,15 @@ hr {
 
 
 /* Contact Page */
-
+/* Container adjustments */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 /* Contact Info Styles */
 .contact-section {
     background-color: #f2f2f2;
@@ -648,6 +656,8 @@ hr {
     background: white;
     transform: translateY(0);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 350px; /* Fixed width for contact info */
+    max-width: 350px;
     
 }
 
@@ -719,6 +729,7 @@ hr {
     padding: 20px;
     background: white;
     transform: translateY(0);
+    min-width: auto;
 }
 
 .form-group {
@@ -911,12 +922,18 @@ footer p{
 
     .contact-container {
         flex-direction: column;
+        gap: 30px;
     }
     
-    .contact-info, .contact-form {
+    .contact-info {
+        flex: 1;
+        max-width: 100%;
+    }
+    
+    .contact-form {
         width: 100%;
+        max-width: 100%;
     }
-    
     .profile-image , .about-image{
         max-width: 300px;
     }
@@ -1124,7 +1141,28 @@ footer p{
     }
 
     .contact-section {
-        padding: 40px 4%;
+        padding: 80px 2% 3%;
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .contact-info, .contact-form {
+        width: 100%; /* Full width */
+        margin-bottom: 20px; /* Space between them */
+    }
+
+    .contact-info {
+        align-items: center; /* Center items in contact info */
+    }
+
+    .contact-form {
+        min-width: 100%; /* Ensure form takes full width */
+    }
+
+    .send-message {
+        width: 100%; /* Full width button */
     }
     
     .section-header h2 {
