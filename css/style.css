@@ -106,9 +106,9 @@ hr {
     color: blue;
 }
 
-/* Negation pseudo class */
+
 .navbar a:hover, 
-.navbar a:not(.active) {
+.navbar a:not(.active) {/* Negation pseudo class */
     opacity: 0.6;
 }
 
@@ -136,10 +136,6 @@ hr {
     font-weight: 700;
     line-height: 1.3;
     color: black;
-}
-
-span{
-    color:blue;
 }
 
 .home-content h3{
@@ -319,8 +315,17 @@ span{
     margin-bottom: 10px;
 }
 
+/* Relational selector */
+.about-content p>span{
+    color: #3498db;
+}
+
+#about span{
+    color: black;
+}
+
 .about-img {
-    flex: 0 0 350px; /* Fixed width for image container */
+    flex: 0 0 350px;
 }
 
 .about-img img {
@@ -368,14 +373,14 @@ span{
     color: black;
 }
 
-.skills-section .cells {
+.skills-section .boxs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.skills-section .cells .cell {
+.skills-section .boxs .box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,14 +391,14 @@ span{
     border-radius: 5px;
 }
 
-.skills-section .cells .cell img {
+.skills-section .boxs .box img {
     width: 30px;
     height: 30px;
     object-fit: contain;
     border-radius: 2px;
 }
 
-.skills-section .cells .cell span {
+.skills-section .boxs .box span {
     font-size: 18px;
 }
 
@@ -420,6 +425,20 @@ span{
     min-width: 80px;
 }
 
+.text {
+    color: black; /* Default text color */
+}
+
+.highlight {
+    color: green; /* Color for highlighted words */
+}
+
+
+.text:not(.highlight) {/* Using negation to style text that is NOT highlighted */
+    color: rgb(93, 88, 88); 
+}
+
+
 .detail-item .value {
     color: black;
 }
@@ -442,6 +461,11 @@ span{
     font-size: 22px;
 }
 
+
+
+
+
+/* blogs */
 /* Container styles */
 .container {
     max-width: 1200px;
@@ -645,7 +669,7 @@ span{
 }
 
 .availability {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -656,6 +680,7 @@ span{
 
 .contact-details p {
     margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .contact-details a {
@@ -688,13 +713,12 @@ span{
     min-width: 75%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
     border-radius: 8px;
     padding: 20px;
     background: white;
     transform: translateY(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group {
@@ -723,6 +747,7 @@ input[required],
 }
 
 /* Change background color when the input is valid */
+/* Use of validity Pseudo Class */
 input[required]:valid,
 .form-group textarea:valid {
     background-color: #d4edda; /* Light green background */
@@ -733,8 +758,6 @@ input[required]:valid,
     resize: none;
     height: 350px;
 }
-
-
 
 .send-message {
     align-self: center;
@@ -794,8 +817,9 @@ footer .social-icon li a{
     transition: 0.5s;
 }
 
+
 footer .social-icon li a:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px);  /* Use of transform attribute */
 }
 
 footer .menu li a{
@@ -908,7 +932,7 @@ footer p{
         font-size: 18px;
     }
     
-    .skills-section .cells .cell {
+    .skills-section .boxs .box {
         width: 160px;
     }
 
@@ -1134,17 +1158,17 @@ footer p{
         font-size: 24px;
     }
     
-    .skills-section .cells .cell {
+    .skills-section .boxs .box {
         width: 140px;
         padding: 8px 15px;
     }
     
-    .skills-section .cells .cell img {
+    .skills-section .boxs .box img {
         width: 25px;
         height: 25px;
     }
     
-    .skills-section .cells .cell span {
+    .skills-section .boxs .box span {
         font-size: 16px;
     }
     
