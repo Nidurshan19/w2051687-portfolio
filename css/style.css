@@ -425,19 +425,22 @@ hr {
     min-width: 80px;
 }
 
-.text {
-    color: black; /* Default text color */
+/* Nth Pseudo Class  */
+.text .highlight:nth-of-type(1) {
+    background-color: orange; /* Color for HTML */
+    font-style: bold;
 }
 
-.highlight {
-    color: green; /* Color for highlighted words */
+.text .highlight:nth-of-type(2) {
+    background-color: lightblue; /* Color for CSS */
+    font-style: bold;
+    
 }
 
-
-.text:not(.highlight) {/* Using negation to style text that is NOT highlighted */
-    color: rgb(93, 88, 88); 
+.text .highlight:nth-of-type(3) {
+    background-color: yellow; /* Color for JavaScript */
+    font-style: bold;
 }
-
 
 .detail-item .value {
     color: black;
