@@ -282,19 +282,29 @@ hr {
 
 
 
-@keyframes cursor{
-    to{
-        border-left: 2px solid blue;
+/* 
+Cursor Animation:
+    This makes a blinking cursor by changing the color of the left border.
+    It creates the effect of a text input cursor.
+*/
+@keyframes cursor {
+    to {
+        border-left: 2px solid blue; /* Changes the cursor color to blue */
     }
 }
 
-@keyframes words{
-    0%, 20%{
-        content: "a Web Developer.";
+/* 
+Words Animation:
+    This is meant to change the text displayed.
+    At 0% and 20%, it shows "a Web Developer."
+*/
+@keyframes words {
+    0%, 100% {
+        content: "a Web Developer."; /* Text to show during the animation */
     }
 }
 
-/* About page */
+
 
 /* ABOUT PAGE */
 /* About section base styles */
