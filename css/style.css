@@ -225,7 +225,7 @@ span{
 }
 
 .typing-text{
-    font-size: 34px;
+    font-size: 20px;
     font-weight: 600;
     min-width: 280px;
 }
@@ -237,7 +237,7 @@ span{
 .typing-text span::before{
     content: "an Undegraduate.";
     color: blue;
-    animation: words 20s infinite;
+    animation: words 10s infinite;
 }
 
 .typing-text span::after{
@@ -939,6 +939,12 @@ footer p{
         text-align: center;
     }
 
+    .home-content h3{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+
     .home-img img{
         width: 60vw;
         margin-top: 3rem;
@@ -1043,9 +1049,8 @@ footer p{
     
     .home-content h1{
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 200;
     }
-
     .detail-item {
         flex-direction: column;
         align-items: flex-start;
@@ -1133,7 +1138,7 @@ footer p{
     footer p {
         font-size: 1rem;
     }
-
+    
 }
 
 
