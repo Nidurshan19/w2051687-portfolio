@@ -295,6 +295,7 @@ hr {
 
 /* ABOUT PAGE */
 /* About section base styles */
+/* Existing styles with added gradients */
 #about {
     padding: 100px 5%;
 }
@@ -315,12 +316,14 @@ hr {
     margin-bottom: 10px;
 }
 
-/* Relational selector */
-.about-content p>span{
-    color: #3498db;
+.about-content p > span {
+    background: linear-gradient(120deg, #3498db, #2980b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
-#about span{
+#about span {
     color: black;
 }
 
@@ -333,6 +336,7 @@ hr {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
@@ -340,9 +344,12 @@ hr {
 }
 
 .section-header h2 {
-    color: black;
+    background: linear-gradient(120deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .about-text {
@@ -353,17 +360,19 @@ hr {
     text-align: justify;
 }
 
-/* Skills section */
 .skills-section {
     padding: 0;
     margin-bottom: 50px;
 }
 
 .skills-section h2 {
+    background: linear-gradient(120deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 35px;
-    color: black;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .skills-section .text {
@@ -387,8 +396,15 @@ hr {
     gap: 10px;
     width: 180px;
     padding: 10px 20px;
-    border: 1.5px solid black;
+    border: none;
     border-radius: 5px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.skills-section .boxs .box:hover {
+    transform: translateY(-5px);
 }
 
 .skills-section .boxs .box img {
@@ -400,11 +416,18 @@ hr {
 
 .skills-section .boxs .box span {
     font-size: 18px;
+    background: linear-gradient(120deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
-/* Contact details */
 .contact-details {
     margin: 30px 0;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .detail-item {
@@ -412,56 +435,34 @@ hr {
     align-items: center;
     margin-bottom: 15px;
     font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.detail-item .icon {
-    margin-right: 10px;
-    font-size: 22px;
+.detail-item:hover {
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
 }
 
-.detail-item .label {
-    font-weight: 500;
-    margin-right: 10px;
-    min-width: 80px;
-}
-
-/* Nth Pseudo Class  */
 .text .highlight:nth-of-type(1) {
-    background-color: orange; /* Color for HTML */
-    font-style: bold;
+    background: linear-gradient(120deg, #ffa500, #ff8c00);
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: white;
 }
 
 .text .highlight:nth-of-type(2) {
-    background-color: lightblue; /* Color for CSS */
-    font-style: bold;
-    
+    background: linear-gradient(120deg, #87ceeb, #4682b4);
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: white;
 }
 
 .text .highlight:nth-of-type(3) {
-    background-color: yellow; /* Color for JavaScript */
-    font-style: bold;
-}
-
-.detail-item .value {
-    color: black;
-}
-
-
-.detail-item .fa-map-marker {
-    color: #FF4136;  /* Bright red color */
-    font-size: 24px;
-}
-
-/* Email icon styling */
-.detail-item .fa-envelope {
-    color: #b8bdb9;  /* Green color */
-    font-size: 20px;
-}
-
-/* Phone icon styling */
-.detail-item .fa-phone {
-    color: #0074D9;  /* Blue color */
-    font-size: 22px;
+    background: linear-gradient(120deg, #ffd700, #ffa500);
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: white;
 }
 
 
