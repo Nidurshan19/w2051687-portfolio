@@ -31,10 +31,6 @@ body{
     
     color: #ffffff;
     line-height: 1.6;
-    overflow:-moz-hidden-unscrollable;
-
-
-
 }
 
 section {
@@ -184,11 +180,14 @@ hr {
 
 /* nth child pseudo class to odd and even icons */
 .social-icons a:nth-child(odd) {
-    background-color: lightblue; /* Odd icons */
+     /* Odd icons */
+    background: linear-gradient(120deg, lightblue, #83b7eb);
+    
 }
 
 .social-icons a:nth-child(even) {
-    background-color: lightgreen; /* Even icons */
+    /* Even icons */
+    background: linear-gradient(120deg,  lightgreen, #7de85c);
 }
 
 /* Optional: Add hover effects */
@@ -201,13 +200,14 @@ hr {
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: white;
-    border-radius: 4rem;
     font-size: 1.6rem;
     color: black;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid black;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Linear Gradient */
+    box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff; /*  Box Shadow */
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -223,12 +223,15 @@ hr {
 
 /* nth child pseudo class to odd and even icons */
 .buttons a:nth-child(odd) {
-    background-color: lightblue; /* Odd icons */
+    /* Odd icons */
+    background: linear-gradient(145deg, lightblue, #3754e7);
 }
 
 .buttons a:nth-child(even) {
-    background-color: lightgreen; /* Even icons */
+     /* Even icons */
+    background: linear-gradient(145deg, lightgreen, #25c13a);
 }
+    
 
 .buttons{
     display: flex;
@@ -497,7 +500,12 @@ hr {
 
 .expertise-header h2 {
     font-size: 36px;
-    color: black;
+    background: linear-gradient(120deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 /* Grid layout */
@@ -583,7 +591,7 @@ hr {
     position: absolute;
     bottom: 10px;
     left: 20px;
-    background-color: #0066cc;
+    background: linear-gradient(145deg, lightblue, #3754e7);
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -781,7 +789,7 @@ input[required]:valid,
 
 .send-message {
     align-self: center;
-    background-color: black;
+    background: linear-gradient(145deg, lightblue, #3754e7);
     color: white;
     border: none;
     font-size: 16px;
