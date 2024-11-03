@@ -106,6 +106,12 @@ hr {
     color: blue;
 }
 
+/* Negation pseudo class */
+.navbar a:hover, 
+.navbar a:not(.active) {
+    opacity: 0.6;
+}
+
 #check, .icons {
     display: none;
     width: 30px;
@@ -165,13 +171,13 @@ span{
     font-weight: 500;
 }
 
-.social-icons a{
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background-color: transparent;
+    background-color: transparent; /* Default background */
     border: 0.2rem solid black;
     font-size: 2rem;
     border-radius: 50%;
@@ -180,10 +186,20 @@ span{
     color: black;
 }
 
-.social-icons a:hover{
-    color: black;
+/* nth child pseudo class to odd and even icons */
+.social-icons a:nth-child(odd) {
+    background-color: lightblue; /* Odd icons */
+}
+
+.social-icons a:nth-child(even) {
+    background-color: lightgreen; /* Even icons */
+}
+
+/* Optional: Add hover effects */
+.social-icons a:hover {
+    background-color: darkgrey; 
     transform: scale(1.3) translateY(-5px);
-    box-shadow: 0  0 25px black;
+    color: white; 
 }
 
 .btn{
@@ -209,20 +225,36 @@ span{
     color: black;
 }
 
+/* nth child pseudo class to odd and even icons */
+.buttons a:nth-child(odd) {
+    background-color: lightblue; /* Odd icons */
+}
+
+.buttons a:nth-child(even) {
+    background-color: lightgreen; /* Even icons */
+}
+
 .buttons{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-
-
-.btn:hover{
+/* Hover effects for odd and even icons */
+.buttons a:nth-child(odd):hover {
+   
     transform: scale3d(1.03);
-    background-color: blue;
     color: black;
-    box-shadow: 0 0 25px blue;
+    box-shadow: 0 0 25px lightgreen;
 }
+
+.buttons a:nth-child(even):hover {
+    transform: scale3d(1.03);
+    color: black;
+    box-shadow: 0 0 25px  lightblue;
+}
+
+
 
 .typing-text{
     font-size: 20px;
@@ -651,8 +683,6 @@ span{
     color: #3498db;
 }
 
-
-
 /* Contact Info Form Styles */
 .contact-form {
     min-width: 75%;
@@ -674,28 +704,37 @@ span{
 .form-group label {
     display: block;
     font-size: 12px;
-    color:black;
+    color: black;
     margin-bottom: 5px;
 }
 
-/* Attribute Selector */
+/* Attribute Selector for Inputs */
 input[required],
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    background-color:rgba(176, 170, 170, 0.12);
+    background-color: rgba(176, 170, 170, 0.12);
     border: none;
     border-radius: 4px;
     color: black;
     font-size: 16px;
-    box-shadow: inset -10px -10px 15px rgba(19, 16, 16, 0.12), 
-           i
+    box-shadow: inset -10px -10px 15px rgba(19, 16, 16, 0.12);
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
+/* Change background color when the input is valid */
+input[required]:valid,
+.form-group textarea:valid {
+    background-color: #d4edda; /* Light green background */
+}
+
+/* Prevent textarea resizing */
 .form-group textarea {
-    resize:none;
+    resize: none;
     height: 350px;
 }
+
+
 
 .send-message {
     align-self: center;
