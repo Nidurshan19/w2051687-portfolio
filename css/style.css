@@ -96,7 +96,8 @@ hr {
     align-items: center;
 }
 
-.logo img {
+/* Attribute selector */
+img[src="images/download-removebg-preview.png"] {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -412,7 +413,8 @@ Words Animation:
     margin-bottom: 50px;
 }
 
-.skills-section h2 {
+/* Relational Attribute-General Sibling */
+.skills-section~h2 {
     background: linear-gradient(120deg, #2c3e50, #34495e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
