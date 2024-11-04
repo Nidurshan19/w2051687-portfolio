@@ -299,7 +299,7 @@ Words Animation:
     At 0% and 20%, it shows "a Web Developer."
 */
 @keyframes words {
-    0%, 100% {
+    0%, 10% {
         content: "a Web Developer."; /* Text to show during the animation */
     }
 }
