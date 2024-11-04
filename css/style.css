@@ -127,7 +127,7 @@ hr {
 
 .navbar a:hover, 
 .navbar a:not(.active) {/* Negation pseudo class */
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 #check, .icons {
@@ -1048,7 +1048,7 @@ footer p{
         left: 0;
         width: 100%;
         background-color: rgb(255, 255, 255,0.2);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);  
         height: 0;
         overflow: hidden;
         transition: height 0.3s ease;
